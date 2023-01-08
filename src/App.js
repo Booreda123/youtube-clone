@@ -9,9 +9,9 @@ const App = () => (
       <Navbar />
       <Routes>
         <Route exact path='/youtube-clone/' element={<Feed />} />
-        <Route path='youtube-clone/video/:id' element={<VideoDetail />} />
-        <Route path='youtube-clone/channel/:id' element={<ChannelDetail />} />
-        <Route path='youtube-clone/search/:searchTerm' element={<SearchFeed />} />
+        <Route path='video/:id' element={<VideoDetail />} />
+        <Route path='channel/:id' element={<ChannelDetail />} />
+        <Route path='search/:searchTerm' element={<SearchFeed />} />
       </Routes>
     </Box>
   </BrowserRouter>
